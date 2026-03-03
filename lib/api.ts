@@ -17,6 +17,7 @@ export interface FetchNotesParams {
   page: number;
   perPage: number;
   search?: string;
+  tag?: NoteTag;
 }
 
 interface FetchNotesResponse {
@@ -36,8 +37,10 @@ export async function fetchNotes(params: FetchNotesParams): Promise<FetchNotesRe
       page: params.page,
       perPage: params.perPage,
       search: params.search?.trim() || undefined,
+      tag: params.tag || undefined,
     },
   });
+
   return res.data;
 }
 
