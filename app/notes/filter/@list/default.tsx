@@ -1,5 +1,3 @@
-import NotesClient from '../[...slug]/Notes.client';
-
 export default function ListDefault() {
-  return <NotesClient />;
+  return null;
 }

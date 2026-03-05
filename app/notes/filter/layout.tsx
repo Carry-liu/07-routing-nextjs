@@ -1,16 +1,16 @@
 import css from './LayoutNotes.module.css';
 
 export default function FilterLayout({
+  children,
   sidebar,
-  list,
 }: {
+  children: React.ReactNode;
   sidebar: React.ReactNode;
-  list: React.ReactNode;
 }) {
   return (
     <div className={css.container}>
       <aside className={css.sidebar}>{sidebar}</aside>
-      <section className={css.content}>{list}</section>
+      <section className={css.content}>{children}</section>
     </div>
   );
 }
