@@ -1,3 +1,5 @@
-export default function FilterPage() {
-  return null;
+import NotesClient from './Notes.client';
+
+export default function FilterSlugPage() {
+  return <NotesClient />;
 }

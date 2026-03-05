@@ -1,5 +1,5 @@
-import NotePreview from '@/components/NotePreview/NotePreview';
+import NotePreviewClient from './NotePreview.client';
 
-export default function NotePreviewModal({ params }: { params: { id: string } }) {
-  return <NotePreview id={params.id} />;
+export default function NoteModalPage({ params }: { params: { id: string } }) {
+  return <NotePreviewClient id={params.id} />;
 }

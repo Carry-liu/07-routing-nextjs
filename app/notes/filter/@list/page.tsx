@@ -1,5 +1,5 @@
 import NotesClient from '../[...slug]/Notes.client';
 
-export default function ListDefault() {
+export default function ListPage() {
   return <NotesClient />;
 }
